@@ -42,3 +42,8 @@ const apiKey =  "a39c15bd96b25918e458bb5ad654de6f";
     searchBtn.addEventListener("click", () => {
         checkWeather(searchBox.value);
     });
+    document.getElementById("searchBox").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    document.getElementById("searchBtn").click();
+  }
+});
